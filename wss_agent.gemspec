@@ -34,4 +34,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'faraday', '~> 0.9', '>= 0.9.1'
   spec.add_dependency 'faraday_middleware', '~> 0.9', '>= 0.9.1'
   spec.add_dependency 'awesome_print', '~> 1.6', '>= 1.6.1'
+
+  unless defined?(RUBY_ENGINE) && RUBY_ENGINE == "jruby"
+    spec.add_dependency 'oj', '~> 2.11', '>= 2.11.2'
+  end
 end

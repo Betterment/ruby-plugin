@@ -17,6 +17,12 @@ require 'wss_agent/client'
 require 'wss_agent/gem_sha1'
 require 'wss_agent/project'
 
+begin # json libraries
+  require 'oj'
+rescue LoadError
+  require 'json'
+end
+
 
 module WssAgent
   # Your code goes here...
@@ -32,6 +38,10 @@ module WssAgent
   class TokenNotFound       < WssAgentError; status_code(10) ; end
   class ApiUrlNotFound      < WssAgentError; status_code(11) ; end
   class ApiUrlInvalid       < WssAgentError; status_code(12) ; end
+
+  def self.json
+    defined?(Oj) ? Oj : JSON
+  end
 
   def self.logger
     @logger ||= Yell.new STDOUT, level: [:info]

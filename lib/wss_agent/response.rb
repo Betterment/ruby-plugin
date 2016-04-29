@@ -23,7 +23,7 @@ module WssAgent
     def parse_response
       if response.success?
         begin
-          @response_data = JSON.load(response.body)
+          @response_data = WssAgent::json.load(response.body)
           @status = @response_data['status'].to_i
           @message = @response_data['message']
         rescue
@@ -49,7 +49,7 @@ module WssAgent
     end
 
     def data
-      @data ||= JSON.load(response_data['data'])
+      @data ||= WssAgent::json.load(response_data['data'])
     rescue
       response_data && response_data.key?('data') ?  response_data['data'] : nil
     end

@@ -19,7 +19,7 @@ module WssAgent
         h.adapter :excon
       end
       response = conn.get("/api/v1/versions/#{spec.name}.json")
-      versions = JSON.load(response.body)
+      versions = WssAgent::json.load(response.body)
       unless versions.detect { |j| j['number'] == spec.version }
         spec.version = versions.first['number']
       end
