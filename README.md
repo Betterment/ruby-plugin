@@ -1,4 +1,4 @@
-**WhiteSource bundle plugin**
+**WhiteSource bundle plugin** [![Build Status](https://travis-ci.org/nonrational/ruby-plugin.svg?branch=master)](https://travis-ci.org/nonrational/ruby-plugin)
 
     __          ___     _ _        _____                          _
     \ \        / / |   (_) |      / ____|                        | |
