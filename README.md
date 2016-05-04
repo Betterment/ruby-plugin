@@ -1,4 +1,4 @@
-**WhiteSource bundle plugin**
+**WhiteSource bundle plugin** [![Build Status](https://travis-ci.org/nonrational/ruby-plugin.svg?branch=master)](https://travis-ci.org/nonrational/ruby-plugin)
 
     __          ___     _ _        _____                          _
     \ \        / / |   (_) |      / ____|                        | |
@@ -6,10 +6,6 @@
       \ \/  \/ / | '_ \| | __/ _ \\___ \ / _ \| | | | '__/ __/ _ \ |
        \  /\  /  | | | | | ||  __/____) | (_) | |_| | | | (_|  __/_|
         \/  \/   |_| |_|_|\__\___|_____/ \___/ \__,_|_|  \___\___(_)
-
-
-
-
 
 
 More about the White Source service : [http://www.whitesourcesoftware.com/](http://www.whitesourcesoftware.com/)
@@ -24,6 +20,13 @@ View documentation here: [http://docs.whitesourcesoftware.com/display/serviceDoc
 $ gem install wss_agent
 ```
 
+##### Supported Rubies:
+
+- 2.2.0
+- 2.1.0
+- 2.0.0
+- 1.9.3
+- jruby-1.7.24 (jruby-19mode)
 
 ### 2) Initial configuration
 ```bash
