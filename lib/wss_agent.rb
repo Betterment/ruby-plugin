@@ -15,6 +15,7 @@ require 'wss_agent/response_inventory'
 require 'wss_agent/client'
 require 'wss_agent/gem_sha1'
 require 'wss_agent/project'
+require 'wss_agent/rake_task'
 require 'multi_json'
 
 module WssAgent
